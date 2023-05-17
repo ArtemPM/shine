@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Epilogue:wght@700&family=Inter:wght@300;400&family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <title>ShineProject</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header_container">
+
+        <div class="header_logo">
+          <a href=""><img src="Images/Header/Subtract.png" alt="" class="header_logo_img"></a>
+          <a href=""><img src="Images/Header/mainLogoTablet.png" alt="" class="header_logo_img_tablet"></a>
+        </div>
+
+        <div class="header_menu">
+          <ul class="header_menu_list">
+            <li class="header_menu_item"><a href="">Exhibits</a></li>
+            <li class="header_menu_item"><a href="">Explore</a></li>
+            <li class="header_menu_item"><a href="">Historic room</a></li>
+            <li class="header_menu_item"><a href="">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="header_login">
+          <a href=""><img src="Images/Header/Component 3.png" alt="" class="header_login_img"></a>
+        </div>
+
+        <div class="header_menu_button">
+          <button id="menuBtn">Menu</button>
+        </div>
+
+      </div>
+    </div> 
+
+    <!-- Menu Tablet -->
+
+    <div id="menu_tablet" class="header_menu_tablet">
+      <ul class="header_menu_list_tablet">
+        <li class="header_menu_item tablet"><a href="">Exhibits</a></li>
+        <li class="header_menu_item tablet"><a href="">Explore</a></li>
+        <li class="header_menu_item tablet"><a href="">Historic room</a></li>
+        <li class="header_menu_item tablet"><a href="">Contacts</a></li>
+      </ul>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- Welcome -->
+      <div class="welcome">
+        <div class="welcome_container">
+
+            <div class="welcome_text">Welcome to</div>
+            <img src="Images/Main Page/welcome.png" alt="" class="welcome_image">
+
+        </div>
+      </div>
+
+      <!-- Welcome clock -->
+      <div class="welocome_clock">
+        <h1 class="welcome_clock_text" id="headline">Countdown to opening:</h1>
+        <div id="countdown">
+          <ul>
+            <li class="countdown_element"><span id="days"></span>days</li>
+            <li class="countdown_element"><span id="hours"></span>Hours</li>
+            <li class="countdown_element"><span id="minutes"></span>Minutes</li>
+            <li class="countdown_element"><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Collection -->
+      <div class="collection">
+        <div class="collection_text">
+          <div class="collection_title">The museum’s entire collection on one platform</div>
+          <div class="collection_subtitle">The Collections database consists of entries for more than 480,000 works in the Musée du Louvre and Musée National Eugène-Delacroix. Updated on a daily basis, it is the result of the continuous research and documentation efforts carried out by teams of experts from both museums.</div>
+        </div>
+        <div class="collection_image">
+          <img src="Images/Main Page/background.png" alt="" class="collection_background">
+          <img src="Images/Header/backgroundPhone.png" alt="" class="collection_background_phone">
+        </div>
+      </div>
+
+      <!-- Exhibits -->
+      <div class="exhibits">
+
+        <div class="section_title_outer">
+          <div class="section_title">Best “SHINE” exhibits</div>
+        </div>
+        
+
+        <div class="exhibits_slider">
+          <figure class="slider_alt">
+            <img class="slider_image" src="Images/Slider/1slide.png" alt="">
+            <img class="slider_image" src="Images/Slider/2slide.png" alt="">
+            <img class="slider_image" src="Images/Slider/3slide.png" alt="">
+            <img class="slider_image" src="Images/Slider/4slide.png" alt="">
+            <img class="slider_image" src="Images/Slider/1slide.png" alt="">
+
+            <img class="slider_imagePhone" src="Images/Slider/1slidePhone.png" alt="">
+            <img class="slider_imagePhone" src="Images/Slider/2slidePhone.png" alt="">
+            <img class="slider_imagePhone" src="Images/Slider/3slidePhone.png" alt="">
+            <img class="slider_imagePhone" src="Images/Slider/4slidePhone.png" alt="">
+            <img class="slider_imagePhone" src="Images/Slider/1slidePhone.png" alt="">
+          </figure>
+        </div>
+
+      </div>
+
+      <!-- Explore -->
+
+      <div class="explore">
+        
+        <div class="section_title_outer">
+          <div class="section_title">Explore “SHINE”</div>
+        </div>
+        
+        <div class="explore_container">
+
+          <div class="explore_gallery">
+
+            <div class="gallery_text">
+              <div class="item_name" id="gallery_item_name">FOLLOW THE ART</div>
+
+              <div class="item_phrase"  id="gallery_phrase1">The future belongs to those who believe in the beauty of their dreams.</div>
+              <div class="item_author"  id="gallery_author1"">Eleanor Roosevelt</div>
+
+              <div class="item_phrase"  id="gallery_phrase2"">Everyone must choose one of two pains: The pain of discipline or the pain of regret.</div>
+              <div class="item_author"  id="gallery_author2"">Jack Canfield</div>
+
+              <div class="item_phrase"  id="gallery_phrase3"">Everything you want is on the other side of fear.</div>
+              <div class="item_author"  id="gallery_author3"">Jim Rohn</div>
+
+              <div class="item_phrase"  id="gallery_phrase4"">A person who never made a mistake never tried anything new.</div>
+              <div class="item_author"  id="gallery_author4"">Albert Einstein</div>
+
+            </div>
+
+            <div class="gallery_photos" onmouseenter="changeGalleryItemNameClass()" onmouseleave="removeGalleryItemNameClass()">
+
+                <div class="gallery_photos_item" id="gallery_photos_item1" onmouseenter="changeGalleryItemClass1()" onmouseleave="removeGalleryItemClass1()">
+                  <img src="Images/Gallery/1image.png" alt="" class="gallery_image">
+                </div>
+                <div class="gallery_photos_item" id="gallery_photos_item2" onmouseenter="changeGalleryItemClass2()" onmouseleave="removeGalleryItemClass2()">
+                  <img src="Images/Gallery/2image.png" alt="" class="gallery_image">
+                </div>
+                <div class="gallery_photos_item" id="gallery_photos_item3" onmouseenter="changeGalleryItemClass3()" onmouseleave="removeGalleryItemClass3()">
+                  <img src="Images/Gallery/3image.png" alt="" class="gallery_image">
+                </div>
+                <div class="gallery_photos_item" id="gallery_photos_item4" onmouseenter="changeGalleryItemClass4()" onmouseleave="removeGalleryItemClass4()">
+                  <img src="Images/Gallery/4image.png" alt="" class="gallery_image">
+                </div>
+
+            </div>
+
+            
+          </div>
+          
+          <div class="gallery_description">Explore the museum with an official guide. Whether you are a first-time visitor or a Louvre regular, there is something for everyone with different tours covering a variety of themes!</div>
+
+        </div>
+
+      </div>
+
+      <!-- Historic room -->
+
+      <div class="historic_room">
+
+        <div class="historic_room_container">
+
+          
+          <div class="section_title_outer">
+            <div class="section_title">Historic room</div>
+          </div>
+
+          
+          <div class="historic_room_text">
+            The Salle des États, designed by the architect Hector Lefuel, was built between 1855 and 1857. During the Second Empire, it accommodaed major legislative sessions presided over by Napoleon III, who insisted on a lavish painted decoration to the glory of the Empire. After his fall from power in 1870, the room became part of the museum and was used to display 19th-century French painting. At the beginning of the Third Republic, the architect Edmond Guillaume adapted the room to suit its new purpose: the windows were sealed off to make more room for the artworks and a glass ceiling was added, introducing light from above to avoid reflections on the paintings. After World War II, the works by French artists were replaced by Venetian paintings.
+          </div>
+
+          <div class="historic_room_gallery">
+            <div class="historic_room_gallery_item"><img src="Images/Historic/1historic.png" alt="" class="historic_room_gallery_photo first"></div>
+            <div class="historic_room_gallery_item"><img src="Images/Historic/2historic.png" alt="" class="historic_room_gallery_photo second"></div>
+            <div class="historic_room_gallery_item"><img src="Images/Historic/3historic.png" alt=""
+            class="historic_room_gallery_photo third"></div>
+            <div class="historic_room_gallery_item"><img src="Images/Historic/4historic.png" alt=""
+            class="historic_room_gallery_photo last"></div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <!-- Hera -->
+
+      <div class="hera">
+        <div class="hera_container">
+         <img src="Images/Hera/HeraPC.png" alt="" class="hera_image_pc">
+         <img src="Images/Hera/HeraPhone.png" alt="" class="hera_image_phone">
+
+
+         <div class="section_title"></div>
+        </div>
+      </div>
+
+      <!-- Coowner -->
+
+      <div class="coowner">
+        <div class="coowner_container">
+
+            <img src="Images/Coowner/coowner.png" alt="" class="coowner_img">
+
+          <div class="coowner_text">
+            <div class="coowner_name">Anthony De Luis</div>
+            <div class="coowner_position">Co - owner</div>
+            <div class="coowner_phrase">“Art begins with resistance - at the point where resistance is overcome. No human masterpiece has ever been created without great labor.”</div>
+          </div>
+
+        </div>
+
+        <span class="bottom_line"></span>
+        <span class="bottom_line"></span>
+        <span class="bottom_line"></span>
+        <span class="bottom_line"></span>
+
+      </div>
+
+      <!-- Contacts -->
+      
+      <div class="contacts">
+
+        <div class="contacts_title">Contact&follow:</div>
+
+        <div class="contacts_container">
+          
+          <div class="contacts_item">
+            <img src="Images/Contacts/cities/statue-of-liberty.png" alt="" class="contacts_item_img">
+            <a href="tel:+ 1 93 920 100" class="contacts_item_phone" target="_blank">+ 1 93 920 100</a>
+            <a href="https://youtu.be/T1yDdUs0uLg" class="contacts_item_social" target="_blank">@shinenewyork</a>
+          </div>
+          
+          <div class="contacts_item">
+            <img src="Images/Contacts/cities/arch-of-triumph.png" alt="" class="contacts_item_img">
+            <a href="tel:+ 33 94 910 200" class="contacts_item_phone" target="_blank">+ 33 94 910 200</a>
+            <a href="https://youtu.be/jHG6Qg6FkqM" class="contacts_item_social" target="_blank">@shineparis</a>
+          </div>
+          
+          <div class="contacts_item">
+            <img src="Images/Contacts/cities/big-ben.png" alt="" class="contacts_item_img">
+            <a href="tel:+ 44 88 908 800" class="contacts_item_phone" target="_blank">+ 44 88 908 800</a>
+            <a href="https://youtu.be/LOqGYF0oFIg" class="contacts_item_social" target="_blank">@shinelondon</a>
+          </div>
+          
+          <div class="contacts_item">
+            <img src="Images/Contacts/cities/building.png" alt="" class="contacts_item_img">
+            <a href="+ 48 91 900 999" class="contacts_item_phone" target="_blank">+ 48 91 900 999</a>
+            <a href="https://youtu.be/Z01-rnJGedk" class="contacts_item_social" target="_blank">@shinewarsaw</a>
+          </div>
+        
+      </div>
+    </div>
+    
+  </main>
+
+<!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer_container">
+
+      <div class="footer_mail">
+        <img src="Images/footer/icon.png" alt="" class="footer_mail_icon">
+        <a href="mailto:shine@mail.fr" class="footer_mail_adress">shine@mail.fr</a>
+      </div>
+      
+      <a href="https://www.behance.net/artempikhota" class="footer_author">Powered by @me and AI</a>
+
+    </div>
+  </footer>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1486 @@
+*
+*::before
+*::after{  
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,ol,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html,body{
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  
+}
+
+[class*="_container"]{
+  max-width: 1440px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header{
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+
+  position: fixed;
+
+  background-color: #1B1B1B;
+}
+
+.header_container{
+  display: flex;
+  min-height: 80px;
+  height: 100%;
+  max-width: 1000px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo_img{
+  min-width: 140px;
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+}
+
+.header_logo_img_tablet{
+  display: none;
+}
+
+/* HEADER MENU */
+
+.header_menu{
+  width: 100%;
+}
+
+.header_menu_list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header_menu_item{
+  width: 25%;
+  text-align: center;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: #fff;
+}
+
+.header_menu_item a{
+  color: #fff;
+}
+
+.header_menu_button{
+  display: none;
+}
+
+.header_menu_button button{
+  text-align: center;
+  font-family: 'Epilogue';
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+}
+
+.header_login_img{
+  width: 40px;
+}
+
+/* MENU TABLET */
+
+.header_menu_tablet{
+  display: none;
+  margin-top: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 111;
+}
+
+/* MAIN */
+
+.main{
+  margin-top: 100px;
+}
+
+/* WELCOME */
+
+
+.welcome{
+  padding: 60px 0 20px;
+}
+
+.welcome_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome_text{
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0.2em;
+  color: #000000;
+
+  margin-right: 20px;
+}
+
+.welcome_image{
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+
+  padding-bottom: 30px;
+}
+
+/* WELCOME CLOCK */
+
+:root {
+  --smaller: .75;
+}
+
+.welocome_clock{
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome_clock_text {
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+.countdown_element{
+  display: inline-block;
+  font-size: 24px;
+  list-style-type: none;
+  padding: 12px 24px 24px 24px;
+  text-transform: uppercase;
+}
+
+.countdown_element span{
+  display: block;
+  font-size: 72px;
+}
+
+/* @media all and (max-width: 768px) {
+  .welcome_clock_text {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  .countdown_element {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  .countdown_element span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+} */
+
+/* COLLECTION */
+
+.collection{
+  display: flex;
+  margin: 80px 0;
+
+  align-items: center;
+}
+
+.collection_text{
+  position: absolute;
+  margin: 0 460px 0 200px;
+
+  max-width: 520px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.collection_title{
+  font-family: 'Epilogue';
+  font-weight: 700;
+  font-size: 40px;
+
+  margin-bottom: 50px;
+}
+
+.collection_subtitle{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.collection_background{
+  width: 100%;
+  max-width: 3220px;
+  min-width: 500px;
+  height: auto;
+}
+
+.collection_background_phone{
+  display: none;
+}
+
+/* SECTION */
+
+.section_title_outer{
+  margin: 0px auto 50px;
+  width: 100%;
+
+  text-align: center;
+
+  z-index: 10;
+}
+
+.section_title{
+  font-family: 'Abril Fatface';
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 0.07em;
+  color: #000000;
+}
+
+.section_title::after{
+  margin: 20px auto;
+  display: block;
+  content: "";
+  width: 700px;
+  border-bottom: 1px solid #000;
+}
+
+/* EXHIBITS */
+
+.exhibits{
+  margin: 100px 0 0 0;
+}
+
+/* SLIDER */
+
+.exhibits_slider{
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 0px;
+}
+
+.slider_alt{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+
+  animation: 20s slider infinite;
+
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.slider_image{
+  width: 20%;
+  max-width: 960px;
+  height: auto;
+}
+
+.slider_imagePhone{
+  width: 20%;
+  max-width: 380px;
+  height: auto;
+  display: none;
+}
+
+@keyframes slider {
+  0%{
+    left: 0;
+  } 
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+
+}
+
+
+/* EXPLORE */
+
+.explore{
+  margin: 150px 0 0 0;
+}
+
+.explore_container{
+  padding: 0 200px;
+}
+
+.explore_gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.gallery_text{
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.item_name{
+  font-family: 'Epilogue';
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  color: #000000;
+
+  padding-top: 30px;
+
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: top .5s linear;
+}
+
+.item_name.active{
+  top: 5%;
+}
+
+.item_phrase{
+font-family: 'Inter';
+font-weight: 400;
+font-size: 24px;
+letter-spacing: 0.15em;
+color: transparent;
+
+width: 100%;
+
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+transition: width,color 0.5s linear;
+
+z-index: 1;
+
+}
+
+.item_phrase.active{
+  color: #000;
+  z-index: 10;
+}
+
+.item_author{
+font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+letter-spacing: 0.15em;
+color: transparent;
+padding: 0;
+
+position: absolute;
+top: 90%;
+width: 100%;
+
+transition: width,color 0.5s linear;
+
+z-index: 1;
+}
+
+.item_author.active{
+  color: #000;
+  z-index: 10;
+}
+
+ .gallery_photos{
+  width: 60%;
+  display: flex;
+  min-height: 440px;
+}
+
+.gallery_photos_item{
+  flex: 1;
+  transition: .5s;
+  margin: 0 5px;
+}
+
+.gallery_image{
+  width: 100%;
+  height: 100%;
+  max-height: 440px;
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.gallery_photos_item:hover{
+  flex: 0 0 44%; 
+}
+.gallery_photos_item:hover > gallery_image {
+  max-height: 440px;
+  max-width: 200px;
+}
+
+.gallery_description{
+font-family: 'Inter';
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+letter-spacing: 0.2em;
+color: #000000;
+
+margin: 0 auto;
+padding: 50px 100px;
+} 
+
+/* HISTORIC ROOM */
+
+.historic_room{
+  padding-top: 50px;
+  margin: 50px auto;
+  background-image: url(/Images//Historic/backgroundCircle.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: center;
+  background-size: 70%;
+}
+
+.historic_room_container{
+  padding: 0 200px;
+}
+
+.historic_room_text{
+font-family: 'Inter';
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+letter-spacing: 0.2em;
+color: #000000;
+
+z-index: 10;
+}
+
+.historic_room_gallery{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.historic_room_gallery_item{
+  padding: 3px 5px;
+  flex: 1;
+  transition: .5s;
+  text-align: center;
+}
+
+.historic_room_gallery_item:hover{
+  flex: 0 0 30%; 
+}
+
+.historic_room_gallery_photo{
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.historic_room_gallery_photo.first{
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+
+  transition: border-radius .2s linear;
+}
+
+.historic_room_gallery_photo.second{
+  transition: border-radius .2s linear;
+}
+
+.historic_room_gallery_photo.third{
+  transition: border-radius .2s linear;
+}
+
+.historic_room_gallery_photo.last{
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+
+  transition: border-radius .2s linear;
+}
+
+.historic_room_gallery_photo.first:hover{
+  border-radius: 0;
+}
+
+.historic_room_gallery_photo.second:hover{
+  border-radius: 0;
+}
+
+.historic_room_gallery_photo.third:hover{
+  border-radius: 0;
+}
+
+.historic_room_gallery_photo.last:hover{
+  border-radius: 0;
+} 
+
+/* HERA */
+
+.hera{
+  text-align: center;
+}
+
+.hera_container{
+  padding: 0 200px;
+}
+
+.hera_image_pc{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 45px;
+  vertical-align: middle;
+}
+
+.hera_image_phone{
+  display: none;
+}
+
+/* COOWNER */
+
+.coowner_container{
+  padding: 100px 100px 0 90px;
+  justify-content: center;
+  display: flex;
+
+  position: relative;
+  font-size: 0px;
+}
+
+.coowner_img{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.coowner_text{
+  padding-top: 70px;
+  flex-direction: column;
+  position: relative;
+}
+
+.coowner_name{
+  font-family: 'Epilogue';
+  font-weight: 700;
+  font-size: 48px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #000000;
+  word-break: keep-all;
+
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin: 15px 0;
+}
+
+.coowner_position{
+  font-family: 'Epilogue';
+  font-weight: 700;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #000000;
+  
+  margin-bottom: 60px;
+}
+
+.coowner_phrase{
+  font-family: 'Epilogue';
+  font-weight: 700;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #000000;
+  
+  max-width: 400px;
+}
+
+.bottom_line{
+  content: "";
+  display: block;
+  border-bottom: 2px #000 solid;
+  margin-bottom: 5px;
+} 
+
+/* CONTACTS */
+
+.contacts{
+  margin: 100px 0;
+  text-align: center;
+}
+
+.contacts_title{
+font-family: 'Inter';
+font-weight: 300;
+font-size: 32px;
+color: #555555;
+
+margin: 20px auto 60px auto;
+}
+
+.contacts_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 100px;
+}
+
+.contacts_item{
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  width: 280px;
+  background-color: #1F1F1F;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+  vertical-align: bottom;
+  
+  position: relative;
+  transition: scale .3s linear;
+}
+
+.contacts_item:hover{
+  background-color: #252525;
+  scale: 1.1;
+}
+
+.contacts_item:hover > .contacts_item_phone {
+  color: #fff;
+  font-size: 20px;
+}
+
+.contacts_item:hover > .contacts_item_social{
+  color: #fff;
+  font-size: 20px;
+}
+
+.contacts_item:hover > .contacts_item_img{
+  transform: translate(-50%, -120%);
+  width: 60px;
+  width: 60px;
+}
+
+.contacts_item_img{
+  margin: 0 auto;
+  width: 80px;
+  width: 80px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .2s linear,
+  width .2s linear,
+  height .2s linear;
+}
+
+.contacts_item_phone{
+font-family: 'Inter';
+font-weight: 300;
+font-size: 0;
+letter-spacing: 0.05em;
+color: transparent;
+
+z-index: 3;
+padding: 0px 0 10px 0;
+margin-top: 80px;
+
+transition: color .3s linear;
+}
+
+.contacts_item_social{
+font-family: 'Inter';
+font-weight: 300;
+font-size: 0;
+letter-spacing: 0.1em;
+color: transparent;
+
+z-index: 3;
+
+transition: color .3s linear;
+}
+
+/* FOOTER */
+
+.footer{
+  background-color: #FAFAFA;
+  border-top: 1px solid #000;
+}
+
+.footer_container{
+  display: flex;
+  flex-direction: column;
+  /* align-self: center; */
+}
+
+.footer_mail{
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.footer_mail_icon{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.footer_mail_adress{
+font-family: 'Inter';
+font-weight: 300;
+font-size: 20px;
+letter-spacing: 0.1em;
+color: #000000;
+
+margin: auto;
+}
+
+.footer_author{
+margin: 10px auto 20px auto;
+
+font-family: 'Inter';
+font-weight: 300;
+font-size: 16px;
+letter-spacing: 0.1em;
+color: #000000;
+}
+
+/* ADAPTIVE */
+
+/* LAPTOP XL */
+
+@media (max-width:1240px) {
+  
+/* EXPLORE */
+
+.explore_container{
+  padding: 0 80px;
+}
+
+}
+
+/* LAPTOP */
+
+@media (max-width: 1024px){
+
+  /* COLLECTION */
+
+  .collection_text{
+  margin: 0 45% 0 5%;
+  }
+
+  .collection_title{
+    font-size: 28px;
+  }
+
+  .collection_subtitle{
+    font-size: 16px;
+  }
+
+  /* SECTION */
+
+  .section_title{
+    font-size: 50px;
+  }
+
+  .section_title::after{
+    margin: 20px auto 0 auto;
+  }
+
+  /* SLIDER */
+
+  .slider_image{
+    max-width: 700px;
+  }
+
+  /* EXPLORE */
+
+  .explore{
+    margin: 50px 0 0 0;
+  }
+
+  /* EXPLORE */
+
+.explore_container{
+  padding: 0 0px;
+}
+
+/* HISTORIC ROOM */
+
+.historic_room_container{
+  padding: 0 50px;
+}
+
+/* HERA */
+
+  .hera_container{
+    padding: 0 100px;
+  }
+
+  /* COOWNER */
+
+  .coowner_container{
+    padding: 100px 50px 0 40px;
+  }
+
+  .coowner_img{
+    max-width: 400px;
+  }
+
+  .coowner_name{
+    font-size: 40px;
+  }
+
+  .coowner_position{
+    font-size: 16px;
+  }
+
+  .coowner_phrase{
+    font-size: 16px;
+  }
+
+}
+
+/* TABLET  XM */
+@media (max-width: 769px){
+  
+  /* HEADER */
+
+  .header_container{
+    position: relative;
+  }
+
+  .header_logo_img{
+    display: none;
+  }
+
+  .header_logo_img_tablet{
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .header_menu_list{
+    display: none;
+  }
+
+  .header_login{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header_menu_button{
+    display: block;
+  }
+
+  /* MENU TABLET */
+
+  .header_menu_tablet{
+    background-color: #1B1B1B;
+  }
+
+  .header_menu_list_tablet{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0 20px 0;
+  }
+
+  .header_menu_item.tablet{
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* WELCOME */
+
+  .welcome{
+    padding: 20px 0;
+  }
+
+  .welcome_text{
+    font-size: 32px;
+  }
+
+  .welcome_image{
+    max-width: 140px;
+    padding-bottom: 15px;
+  }
+
+  /* WELCOME CLOCK */
+
+  .welcome_clock_text{
+    font-size: 20px;
+  }
+
+  .countdown_element{
+    font-size: 20px;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .countdown_element:first-child{
+    padding: 12px;
+  }
+
+  .countdown_element span{
+    font-size: 52px;
+  }
+
+    /* COLLECTION */
+
+  .collection_text{
+  margin: 0 42% 0 5%;
+  }
+
+  .collection_title{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .collection_subtitle{
+    font-size: 12px;
+  }
+  
+    /* SECTION */
+
+  .section_title{
+    font-size: 40px;
+  }
+
+  .section_title:after{
+    width: 400px;
+  }
+
+  /* EXHIBITS */
+
+  .exhibits{
+    margin: 0;
+  }
+
+    /* SLIDER */
+
+  .slider_image{
+    max-width: 550px;
+  }
+
+  /* EXPLORE */
+
+  .explore_gallery{
+    flex-direction: column;
+  }
+
+  .gallery_text{
+    margin: 0 auto;
+    width: 90%;
+    position: static;
+    padding: 20px 0;
+  }
+  
+  .item_name{
+    position: static;
+    margin: 0 auto;
+    transform: rotateY(0);
+    padding: 0 0 20px 0;
+  }
+  
+  .item_name.active{
+    display: none;
+  }
+
+  .item_phrase{
+    position: static;
+    display: none;
+    transform: rotateY(0);
+  }
+
+  .item_phrase.active{
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .item_author{
+    position: static;
+    display: none;    
+  }
+
+  .item_author.active{
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .gallery_photos{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .gallery_description{
+    padding: 50px;
+  }
+
+  /* HISTORIC ROOM */
+
+.historic_room_container{
+  padding: 0 30px;
+}
+
+.historic_room_text{
+  font-size: 16px;
+}
+
+.historic_room_gallery{
+  margin: 30px 0;
+}
+
+/* HERA */
+
+.hera_container{
+  padding: 0 30px;
+}
+
+  /* COOWNER */
+
+  .coowner_container{
+    padding: 100px 50px 0 40px;
+  }
+
+  .coowner_img{
+    max-width: 320px;
+  }
+
+  .coowner_name{
+    font-size: 28px;
+  }
+
+  .coowner_position{
+    font-size: 14px;
+    margin: 0 0 30px 0;
+  }
+
+  .coowner_phrase{
+    font-size: 13px;
+  }
+
+  /* CONTACTS */
+
+  .contacts{
+   margin: 60px 0;
+  }
+
+  .contacts_title{
+    margin: 20px auto 40px auto;
+  }
+  
+}
+
+
+/* TABLET  XS */
+@media (max-width: 576px){
+
+  /* SECTION */
+
+  .section_title{
+    font-size: 36px;
+  }
+
+  .section_title:after{
+    width: 400px;
+  }
+
+  /* SECTION */
+
+  .section_title_outer{
+    margin: 0px auto 20px;
+  }
+
+  .collection{
+  margin: 40px 0;
+
+  }
+
+    /* SECTION */
+
+  .section_title{
+    font-size: 32px;
+  }
+
+  .section_title:after{
+    width: 300px;
+  }
+
+    /* SLIDER */
+
+  .slider_image{
+    display: none;
+  }
+
+  .slider_imagePhone{
+    display: block;
+  }
+
+  /* EXPLORE */
+
+  .gallery_photos{
+    width: 95%;
+  }
+
+  .gallery_photos_item{
+  margin: 0 2px;
+  }
+
+  .gallery_photos_item:hover{
+    flex: 0 0 70%; 
+  }
+
+  /* HISTORIC ROOM */
+
+  .historic_room_gallery{
+    flex-wrap: wrap;
+    /* margin: 60px 0; */
+  }
+
+  .historic_room_gallery_item:hover{
+    flex: 1;
+    scale: 1.2;
+  }
+
+  .historic_room_gallery_photo{
+    min-width: 175px;
+    /* max-width: 300px; */
+  }
+
+  .historic_room_gallery_photo.first{
+    border-bottom-left-radius: 0;
+  }
+
+  .historic_room_gallery_photo.second{
+    border-top-right-radius: 50px;
+  }
+
+  .historic_room_gallery_photo.third{
+    border-bottom-left-radius: 50px;
+  }
+
+  .historic_room_gallery_photo.last{
+    border-top-right-radius: 0;
+  }
+
+  /* HERA */
+
+.hera_container{
+  padding: 0 30px;
+}
+
+.hera_image_pc{
+  display: none;
+}
+
+.hera_image_phone{
+  display: block;
+  max-height: 600px;
+  height: 100%;
+  width: auto;
+
+  margin: 0 auto;
+}
+
+
+  /* COOWNER */
+
+  .coowner_container{
+    padding: 80px 10px 0 10px;
+    flex-direction: column-reverse;
+  }
+
+  .coowner_img{
+    max-width: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .coowner_text{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .coowner_name{
+    font-size: 28px;
+    top: 85px;
+    margin: 0;
+  }
+
+  .coowner_position{
+    font-size: 14px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 120px;
+  }
+
+  .coowner_phrase{
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+    height: 100px;
+  }
+
+  /* CONTACTS */
+
+  .contacts_container{
+    margin: 0;
+    /* padding: 0; */
+  }
+
+}
+
+/* PHONE XL*/
+
+@media (max-width: 426px){
+  
+    /* WELCOME */
+
+  .welcome_text{
+    font-size: 26px;
+  }
+
+  .welcome_image{
+    max-width: 120px;
+    padding-bottom: 15px;
+  }
+
+  /* COLLECTION */
+
+  .collection_text{
+    width: 90%;
+
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+  }
+
+  .collection_background{
+    display: none;
+  }
+
+  .collection_background_phone{
+    display: block;
+    width: 100%;
+    max-width: 426px;
+    height: auto;
+  }
+
+    /* SECTION */
+
+  .section_title{
+    font-size: 28px;
+  }
+
+  .section_title:after{
+    width: 320px;
+  }
+
+  /* SLIDER */
+
+  .slider_imagePhone{
+    max-width: 300px;
+  }
+
+  /* EXPLORE */
+
+  .gallery_description{
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+
+  /* HISTORIC ROOM */
+
+  .historic_room_gallery_item{
+    text-align: center;
+  }
+  
+  .historic_room_gallery_photo{
+    max-width: 240px;
+  }
+
+  .historic_room_gallery_photo.first{
+    border-top-right-radius: 50px;
+  }
+
+  .historic_room_gallery_photo.second{
+    border-top-right-radius: 0;
+  }
+  
+  .historic_room_gallery_photo.third{
+    border-bottom-left-radius: 0;
+  }
+
+  .historic_room_gallery_photo.last{
+    border-bottom-left-radius: 50px;
+  }
+
+  /* HERA */
+
+.hera_container{
+  padding: 0 10px;
+}
+
+.hera_image_phone{
+  display: block;
+  max-height: 520px;
+  height: 100%;
+  width: auto;
+
+  margin: 0 auto;
+}
+
+  /* COOWNER */
+
+  .coowner_container{
+    padding: 40px 10px 0 10px;
+  }
+
+}
+
+/* PHONE XM*/
+
+@media (max-width: 376px){
+  
+  /* WELCOME */
+
+.welcome_text{
+  font-size: 24px;
+}
+
+.welcome_image{
+  max-width: 90px;
+  padding-bottom: 10px;
+}
+
+/* WELCOME CLOCK */
+
+.welcome_clock_text{
+  font-size: 16px;
+}
+
+/* COLLECTION */
+
+.collection_text{
+  margin-top: 70px;
+}
+
+.collection_title{
+  font-size: 14px;
+}
+
+.collection_subtitle{
+  font-size: 11px;
+}
+
+    /* SECTION */
+
+  .section_title{
+    font-size: 22px;
+  }
+
+  .section_title:after{
+    width: 240px;
+  }
+
+}
+
+/* PHONE XS*/
+
+@media (max-width: 320px){
+
+/* COLLECTION */
+
+.collection_text{
+  margin-top: 120px;
+}
+
+.collection_title{
+  font-size: 12px;
+}
+
+.collection_subtitle{
+  font-size: 10px;
+}
+
+  /* SLIDER */
+
+  .slider_imagePhone{
+    max-width: 260px;
+  }
+
+
+}
